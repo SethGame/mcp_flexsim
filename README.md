@@ -10,6 +10,31 @@ Why this matters
 
 ---
 
+## Design
+
+```
+┌─────────────────────┐       JSON-RPC        ┌─────────────────────┐
+│    MCP Client       │◄────────────────────► │    MCP Server       │
+│  (Claude/Cursor)    │     stdin/stdout      │  (flexsim_mcp.py)   │
+└─────────────────────┘                       └──────────┬──────────┘
+                                                         │
+                                                         │ Python API
+                                                         ▼
+                                              ┌─────────────────────┐
+                                              │     FlexSimPy       │
+                                              │   (Python SDK)      │
+                                              └──────────┬──────────┘
+                                                         │
+                                                         │ COM/IPC
+                                                         ▼
+                                              ┌─────────────────────┐
+                                              │      FlexSim        │
+                                              │  (Simulation Engine)│
+                                              └─────────────────────┘
+```
+
+---
+
 ## Features
 
 - MCP server entry point: `mcp_server/flexsim_mcp.py`
