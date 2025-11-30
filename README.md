@@ -1,4 +1,15 @@
-# FlexSim MCP Server (Python + FlexSimPy)
+---
+title: FlexSim MCP Server
+emoji: 👌
+colorFrom: blue
+colorTo: green
+sdk: static
+sdk_version: "0.1"
+app_file: app.py
+pinned: false
+---
+
+# FlexSim MCP Server (incl. FlexSimPy)
 
 ![Track](https://img.shields.io/badge/track-building--mcp--track--xx-blue)
 
