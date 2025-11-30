@@ -1,0 +1,10 @@
+[project]
+name = "mcp_flexsim"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = [
+    "fastmcp>=2.13.0.2",
+    "mcp>=1.20.0",
+    "psutil>=7.1.2",
+    "tomli>=2.3.0",
+]

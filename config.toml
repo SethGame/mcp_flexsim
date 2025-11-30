@@ -1,0 +1,48 @@
+# FlexSimMCP Configuration File
+
+[flexsim]
+# Default FlexSim installation path
+# Update this path to match your FlexSim installation directory
+install_path = "FlexSimDev/program"
+src_path = "C:\\Program Files\\FlexSim 2025 Update 2"
+
+[python]
+# Python version for FlexSimPy module (3.9, 3.10, 3.11, or 3.12)
+version = "3.12"
+
+[server]
+# MCP Server configuration
+name = "FlexSimPy MCP Server"
+version = "0.1.0"
+# Endpoint for HTTP transport
+http_endpoint = "http://127.0.0.1:8088/mcp"
+
+[session]
+# Session management policy
+# Options: "singleton" (one FlexSim instance) or "multi" (multiple instances)
+reuse_policy = "singleton"
+
+[logging]
+# Logging configuration
+level = "INFO"
+# Log file path
+log_file = "flexsim_mcp.log"
+
+[build]
+# FlexSimPy build automation settings
+
+# FlexSimPy source directory (relative to repo root)
+flexsimpy_dir = "depends/FlexSimPy"
+
+# Automatically build FlexSimPy if not found (default: true)
+auto_build = true
+
+# Automatically install built .pyd to site-packages (default: true)
+auto_install = true
+
+# Custom MSBuild.exe path (optional)
+# If not specified, will search common Visual Studio locations
+msbuild_path = "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\MSBuild\\Current\\Bin\\MSBuild.exe"
+
+# Check FlexSimPy on server startup (default: true)
+check_on_startup = true

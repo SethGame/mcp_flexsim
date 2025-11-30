@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "flexsim": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "<repo-flexsim_mcp>/",
+        "run",
+        "mcp_server/flexsim_mcp.py"
+      ]
+    }
+  }
+}
