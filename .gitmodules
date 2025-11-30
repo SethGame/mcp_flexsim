@@ -1,0 +1,3 @@
+[submodule "depends/FlexSimPy"]
+	path = depends/FlexSimPy
+	url = https://github.com/flexsim/FlexSimPy.git
