@@ -1,10 +1,10 @@
 ---
 title: FlexSim MCP Server
-emoji: 👌
+emoji: ⚙️
 colorFrom: blue
-colorTo: green
-sdk: static
-sdk_version: "0.1"
+colorTo: cyan
+sdk: gradio
+sdk_version: "5.0.0"
 app_file: app.py
 pinned: false
 ---

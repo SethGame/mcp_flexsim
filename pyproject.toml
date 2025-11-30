@@ -8,3 +8,10 @@ dependencies = [
     "psutil>=7.1.2",
     "tomli>=2.3.0",
 ]
+
+[project.optional-dependencies]
+client = [
+    "gradio>=5.0.0",
+    "google-genai>=1.0.0",
+    "python-dotenv>=1.0.0",
+]
